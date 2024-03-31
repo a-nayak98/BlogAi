@@ -3,6 +3,9 @@
 import React from "react";
 import { Link, } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
 
 const SignUp = () => {
     const navigate = useNavigate()
@@ -78,14 +81,14 @@ const SignUp = () => {
           {/* icon down arrow */}
           <div className="w-full flex items-center justify-center gap-1">
             {" "}
-            <div className="w-[40px] h-[40px] rounded-md bg-slate-300">
-              <p>google</p>
+            <div className="w-[40px] h-[40px] flex justify-center items-center rounded-md bg-slate-300">
+              <FcGoogle className="text-2xl "  />
             </div>
-            <div className="w-[40px] h-[40px] rounded-md bg-slate-300">
-              <p>apple</p>
+            <div className="w-[40px] h-[40px] flex justify-center items-center rounded-md bg-slate-300">
+              <FaApple  className="text-2xl " />
             </div>
-            <div className="w-[40px] h-[40px] rounded-md bg-slate-300">
-              <p>facebook</p>
+            <div className="w-[40px] h-[40px] flex justify-center items-center rounded-md bg-slate-300">
+              <FaFacebook  className="text-2xl " />
             </div>
           </div>
           {/* logo */}
